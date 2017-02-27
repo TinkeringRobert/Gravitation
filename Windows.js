@@ -1,10 +1,10 @@
 module.exports = {
   database: {
-      infra: 'F:/databases/infra.db',
+      starchart: 'F:/databases/starchart.db',
       nodes: 'F:/databases/nodes.db'
   },
   mqtt: {
-    host: 'http://10.0.0.200',
+    host: 'http://10.0.0.100',
     port: 1883,
     prefix: 'windows_'
   },

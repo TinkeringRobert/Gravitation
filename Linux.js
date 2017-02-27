@@ -1,7 +1,7 @@
 module.exports = {
   database: {
-      infra: 'home/pi/Database/infra.db',
-      nodes: 'home/pi/Database/nodes.db'
+      starchart: '/home/automat/Databases/starchart.db',
+      nodes: '/home/automat/Databases/nodes.db'
   },
   mqtt: {
     host: 'http://127.0.0.1',
