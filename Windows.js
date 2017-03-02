@@ -15,12 +15,13 @@ module.exports = {
     send_port: 22222
   },
   serial_port: {
-    name_port: 'COM19',
+    name_port: 'COM5',
     baud_rate: 115200
   },
+  server_ip: '10.0.0.101',
   application_port: {
     portal: 8080,
-    src: 4000,
-    infra: 5000
+    relaystation: 4000,
+    starchart: 5000
   }
 }

@@ -18,9 +18,10 @@ module.exports = {
     name_port: '/dev/ttyACM0',
     baud_rate: 115200
   },
+  server_ip: '10.0.0.100',
   application_port: {
     portal: 80,
-    src: 4000,
-    infra: 5000
+    relaystation: 4000,
+    starchart: 5000
   }
 }
