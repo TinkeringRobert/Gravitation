@@ -1,7 +1,9 @@
 module.exports = {
   database: {
-      starchart: 'F:/databases/starchart.db',
-      nodes: 'F:/databases/nodes.db'
+    alphaquadrant: 'F:/databases/alphaquadrant.db',
+    deltaquadrant: 'F:/databases/deltaquadrant.db',
+    starchart: 'F:/databases/starchart.db',
+    nodes: 'F:/databases/nodes.db'
   },
   mqtt: {
     host: 'http://10.0.0.100',
@@ -21,7 +23,9 @@ module.exports = {
   server_ip: '10.0.0.101',
   application_port: {
     portal: 8080,
-    relaystation: 4000,
-    starchart: 5000
+    relay_station: 4000,
+    star_chart: 4001,
+    alpha_quadrant: 4002,
+    delta_quadrant: 4003
   }
 }

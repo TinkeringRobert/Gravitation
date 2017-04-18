@@ -21,7 +21,9 @@ module.exports = {
   server_ip: '10.0.0.100',
   application_port: {
     portal: 80,
-    relaystation: 4000,
-    starchart: 5000
+    relay_station: 4000,
+    star_chart: 4001,
+    alpha_quadrant: 4002,
+    delta_quadrant: 4003
   }
 }
