@@ -3,7 +3,7 @@ module.exports = {
     database_postfix: '',
     username: 'root',
     password: 'f3e32c78146eed563ce105a318ec5dc0b3363b770ae576f3df8068a4a7178cdee17f3d0717a8a6f3b948edd8c13c0eb9QX4Ro+TL79JFgi79yh02Zg==',
-    hostaddress: '127.0.0.1',
+    hostaddress: '10.0.0.200',
     alphaquadrant: 'alpha_quadrant',
     deltaquadrant: 'delta_quadrant',
     starchart: 'star_chart',
