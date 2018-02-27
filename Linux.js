@@ -1,7 +1,13 @@
 module.exports = {
   database: {
-      starchart: '/home/automat/Databases/starchart.db',
-      nodes: '/home/automat/Databases/nodes.db'
+    database_postfix: '',
+    username: 'root',
+    password: 'f3e32c78146eed563ce105a318ec5dc0b3363b770ae576f3df8068a4a7178cdee17f3d0717a8a6f3b948edd8c13c0eb9QX4Ro+TL79JFgi79yh02Zg==',
+    hostaddress: '127.0.0.1',
+    alphaquadrant: 'alpha_quadrant',
+    deltaquadrant: 'delta_quadrant',
+    starchart: 'star_chart',
+    relaystation: 'relay_station'
   },
   mqtt: {
     host: 'http://127.0.0.1',
@@ -18,7 +24,7 @@ module.exports = {
     name_port: '/dev/ttyACM0',
     baud_rate: 115200
   },
-  server_ip: '10.0.0.100',
+  server_ip: '10.0.0.200',
   application_port: {
     portal: 80,
     relay_station: 4000,

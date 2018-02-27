@@ -1,9 +1,13 @@
 module.exports = {
   database: {
-    alphaquadrant: 'F:/databases/alphaquadrant.db',
-    deltaquadrant: 'F:/databases/deltaquadrant.db',
-    starchart: 'F:/databases/starchart.db',
-    nodes: 'F:/databases/nodes.db'
+    database_postfix: '_windows',
+    username: 'root',
+    password: 'f3e32c78146eed563ce105a318ec5dc0b3363b770ae576f3df8068a4a7178cdee17f3d0717a8a6f3b948edd8c13c0eb9QX4Ro+TL79JFgi79yh02Zg==',
+    hostaddress: '10.0.0.200',
+    alphaquadrant: 'alpha_quadrant',
+    deltaquadrant: 'delta_quadrant',
+    starchart: 'star_chart',
+    relaystation: 'relay_station'
   },
   mqtt: {
     host: 'http://10.0.0.100',
