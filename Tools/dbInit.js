@@ -8,10 +8,10 @@ var async = require('async');
 var moment = require('moment');
 
 module.exports = {
-  initialize: function(db, name, migrations, cb){
+  initialize: function(db, db_name, name, migrations, cb){
     winston.info('Starting : ' + name + ' DbInit');
     winston.info('-------------------------------------------');
-		winston.info("Step 1 : Initialise database   :: " + db.starchart + db.database_postfix);
+		winston.info("Step 1 : Initialise database   :: " + db_name + db.database_postfix);
     // winston.info("          Credentials ");
     // winston.info(" Address : " + db.hostaddress);
     // winston.info(" Username: " + db.username);
@@ -21,7 +21,7 @@ module.exports = {
         host: db.hostaddress,
         user: db.username,
         password: encryptor.decrypt(db.password),
-        database: db.starchart + db.database_postfix,
+        database: db_name + db.database_postfix,
         connectionLimit: 4
       }
     );
