@@ -30,6 +30,7 @@ module.exports = {
     relay_station: 4000,
     star_chart: 4001,
     alpha_quadrant: 4002,
-    delta_quadrant: 4003
+    delta_quadrant: 4003,
+    time_distortion: 4004
   }
 }

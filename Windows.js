@@ -10,7 +10,7 @@ module.exports = {
     relaystation: 'relay_station'
   },
   mqtt: {
-    host: 'http://10.0.0.100',
+    host: 'http://10.0.0.200',
     port: 1883,
     prefix: 'windows_'
   },
@@ -21,8 +21,8 @@ module.exports = {
     send_port: 22222
   },
   serial_port: {
-    name_port: 'COM5',
-    baud_rate: 115200
+    name_port: 'COM7',
+    baud_rate: 9600
   },
   server_ip: '10.0.0.101',
   application_port: {
@@ -30,6 +30,7 @@ module.exports = {
     relay_station: 4000,
     star_chart: 4001,
     alpha_quadrant: 4002,
-    delta_quadrant: 4003
+    delta_quadrant: 4003,
+    time_distortion: 4004
   }
 }
