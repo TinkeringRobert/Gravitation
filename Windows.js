@@ -24,13 +24,23 @@ module.exports = {
     name_port: 'COM7',
     baud_rate: 9600
   },
-  server_ip: '10.0.0.101',
+  server_ip: '10.0.0.9',
   application_port: {
-    portal: 8080,
+    wormhole: 4200,
+    gravitation: 3000,
     relay_station: 4000,
     star_chart: 4001,
     alpha_quadrant: 4002,
     delta_quadrant: 4003,
     time_distortion: 4004
-  }
+  },
+  applications: [
+    {name: "wormhole", port: 4200},
+    {name: "gravitation", port: 3000},
+    {name: "relay_station", port: 4000},
+    {name: "star_chart", port: 4001},
+    {name: "alpha_quadrant", port: 4002},
+    {name: "delta_quadrant", port: 4003},
+    {name: "time_distortion", port: 4004}
+  ]
 }
