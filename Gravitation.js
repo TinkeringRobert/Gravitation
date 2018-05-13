@@ -62,14 +62,14 @@ app.get('/status', function (req, res) {
 });
 
 _.forEach(params.applications, function(application) {
-  var app_url = '/' + application.name + '/' + application.port + '';
+  var app_url = '/' + application.name + '';
 
   app.get(app_url + "/*", function (req, res) {
     var url_parts = url.parse(req.url, true).href;
     var url_sub = _.replace(url_parts, app_url, '');
 
     winston.debug('Got get request for ' + application.name + ' : ' + application.port);
-    winston.silly('http://'+params.server_ip+':'+application.port+url_sub);
+    winston.silly('http://' + params.server_ip + ':' + application.port + url_sub);
 
     http.get('http://' + params.server_ip + ':' + application.port + url_sub, (resp) => {
       var data = '';
@@ -90,7 +90,8 @@ _.forEach(params.applications, function(application) {
     var url_sub = _.replace(url_parts, app_url, '');
 
     winston.debug('Got post request for ' + application.name + ' : ' + application.port);
-    winston.silly('http://'+params.server_ip+':'+application.port+url_sub);
+    winston.silly('http://' + params.server_ip + ':' + application.port + url_sub);
+    
     const options = {
       hostname: params.server_ip,
       port: application.port,
